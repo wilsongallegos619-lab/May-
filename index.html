@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Usted 🤍</title>
+<style>
+body{
+  background: linear-gradient(to bottom, #fce4ec, #ffffff);
+  font-family: 'Georgia', serif;
+  text-align:center;
+  padding:50px;
+}
+
+.caja{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0px 0px 25px rgba(255,105,180,0.4);
+  max-width:600px;
+  margin:auto;
+}
+
+button{
+  background:#ff4d6d;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:12px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#e63956;
+}
+
+#contenido{
+  display:none;
+  margin-top:20px;
+  animation: aparecer 2s ease;
+}
+
+@keyframes aparecer{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Lo Que Guardaría Para Siempre Con Usted 💌</h1>
+
+<div class="caja">
+  <p>Esta caja guarda algo muy especial...</p>
+  <button onclick="abrirCaja()">Abrir la caja</button>
+
+  <div id="contenido">
+    <h2>Para Usted 🤍</h2>
+    <p>Desde aquel “hodi”, mi vida cambió.</p>
+    <p>El 26 de diciembre fue uno de los mejores días de mi vida.</p>
+    <p>El día que vio el mar, mi corazón se sintió completo.</p>
+    <p>Prometo cuidar su corazón como si fuera el mío.</p>
+  </div>
+</div>
+
+<script>
+function abrirCaja(){
+  document.getElementById("contenido").style.display="block";
+}
+</script>
+
+</body>
+</html>
